@@ -40,7 +40,7 @@ python main.py
   - 안내하는 동안 안내중 문구가 뜨며 화면 터치 불가
   - 안내가 완료되면 상세하게 매장을 안내해주는 음성출력 구현(방향 제시)
 
-<img width="1201" alt="image" src="https://github.com/user-attachments/assets/400dc82a-483e-4eee-8a29-f23558f7ea4c">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/400dc82a-483e-4eee-8a29-f23558f7ea4c">
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/e64c78b1-6432-4f5e-ae54-2d25a8042147">
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/b419f7aa-dcb8-4957-9b84-5ebcf78c1266">
 

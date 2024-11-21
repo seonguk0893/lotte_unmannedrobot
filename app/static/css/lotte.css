@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    width: 1205px;
+    height: 750px;
+}
+
+nav {
+    position: absolute;
+}
+
+.logo {
+    width: 400px;
+    margin-left: 2em;
+    padding-top: 2em;
+}
+
+main {
+    width: 1205px;
+    height: 750px;
+    background: #ffffff;
+    margin: 0;
+    display: flex;
+    font-family: monospace;
+}
+
+main h1,
+main p,
+main a {
+    color: black;
+    font-size: 2rem;
+    /* 텍스트 크기 증가 */
+}
+
+main h1 {
+    font-size: 2.5rem;
+}
+
+main p {
+    font-size: 1.8rem;
+}
+
+main a {
+    font-size: 1.5rem;
+    border-bottom: 5px solid black;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+main .left,
+main .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+main .right {
+    background: #e51d1d;
+}
+
+main .right a {
+    border-bottom: 5px solid white;
+}
+
+main .right h1,
+main .right p,
+main .right a {
+    color: #ffffff;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.fa-cart-shopping:before,
+.fa-shopping-cart:before {
+    color: black;
+    font-size: 70px;
+    /* 쇼핑카트 아이콘 크기 증가 */
+}
+
+.fa-microphone::before {
+    color: white;
+    font-size: 70px;
+    /* 마이크 아이콘 크기 증가 */
+}
+
+.slide-out-right {
+    animation: slideOutRight 1s ease forwards;
+}
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1s ease forwards;
+}
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}

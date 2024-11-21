@@ -26,36 +26,29 @@ python main.py
 
 <br> 
 
-## 페이지 설명
+## 페이지 및 기능 설명
 
 ### HOME 화면
   - 매장찾기, 음성인식을 통한 매장찾기 2개의 페이지로 구성
 
-<img width="1200" alt="image" src="https://github.com/user-attachments/assets/54669b29-ee50-45f3-950c-e15698437248">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/54669b29-ee50-45f3-950c-e15698437248">
 
 
-### 관심상품 페이지
-  - 관심상품 페이지에서도 장바구니 담기 가능
+### 매장찾기 페이지
+  - 1,2층 매장 리스트가 나열되어 있고 매장을 클릭하면 매장위치와 안내시작을 할 수 있는 모달이 뜸
+  - 안내시작을 누를 경우 로봇 이동경로 중 안내매장과 가장 가까운 매장으로 안내
+  - 안내하는 동안 안내중 문구가 뜨며 화면 터치 불가
+  - 안내가 완료되면 상세하게 매장을 안내해주는 음성출력 구현(방향 제시)
 
-<img width="1376" alt="Untitled1" src="https://github.com/user-attachments/assets/470070f9-762d-4a62-a0c4-5c82d246b0bc">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e64c78b1-6432-4f5e-ae54-2d25a8042147">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/b419f7aa-dcb8-4957-9b84-5ebcf78c1266">
 
-### 장바구니 페이지
-  - 장바구니에 담긴 상품들을 수량 체크 후 결제
-  - 결제하기 버튼 클릭 시 사용자 이름 입력란이 나오고 입력한 이름과 결제금액 정보가 결제페이지로 이동
-  - 설문조사를 통해 사용자들의 만족도 데이터 수집
 
-<img width="1380" alt="Untitled2" src="https://github.com/user-attachments/assets/f9c357a8-960e-4bf2-aa1b-ba44bb7cfbec"><br> 
-<img width="1381" alt="Untitled3" src="https://github.com/user-attachments/assets/58ff0652-a225-49df-9cad-78fee5e8cbe1"><br> 
-<img width="854" alt="image4" src="https://github.com/user-attachments/assets/57c41492-5458-4822-b244-4ae4a338414d">
-### 결제 페이지
-  - 결제하기 버튼 클릭시 웹결제창이 뜨고 결제 가능
-  - 삭제하기 버튼 클릭시 사용자 이름과 결제정보 삭제
+### 음성인식 페이지
+  - 마이크 버튼으로 매장명을 말하면 매장찾기 페이지와 동일하게 모달이 뜸
+  - 매장찾기와 그 다음은 동일
+  - 매장지도를 통해 1,2층 아울렛 안내도를 확인
 
-<img width="1334" alt="Untitled4" src="https://github.com/user-attachments/assets/70c31a17-d536-464a-b60f-936c4601f8ac"><br> 
-<img width="1294" alt="Untitled5" src="https://github.com/user-attachments/assets/679ee67f-efe2-46d7-ac61-dbc2af9bb3b7"><br> 
-![image](https://github.com/user-attachments/assets/c0a06c40-2168-43fc-8ee7-cc9273e168c1)
-### 데이터가 저장되는 DB
-  - 사용자 이름, 결제금액, 만족도 설문조사 데이터 저장
-
-<img width="1508" alt="Untitled7" src="https://github.com/user-attachments/assets/6cb04fa7-55fd-43d6-a15f-5acba6238d3c">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/c0d266fc-53e1-4c04-9afb-fdfaf4d02c7f">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/280c2e7f-4a0a-4aba-91ee-7784b1412815">
 

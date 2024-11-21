@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>롯데아울렛 광주월드컵점</title>
+    <link rel="icon" href="static/img/favicon.ico" />
+    <link rel="stylesheet" href="static/css/lotte.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="/static/img/lottelogo_b.png"
+        alt="롯데 아울렛 로고"
+        class="logo"
+        id = "logo-image"
+      />
+    </nav>
+    <main>
+      <div class="left" onclick="goToLotte1()">
+        <div class="content">
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          <h1>매장 찾기</h1>
+          <p>매장 리스트를 통해 위치를 확인하세요!</p>
+          <a class="hoverable">TAP</a>
+        </div>
+      </div>
+
+      <div class="right" onclick="goToLotte2()">
+        <div class="content">
+          <i class="fa-solid fa-microphone fa-lg"></i>
+          <h1>음성인식을 통해 매장 찾기</h1>
+          <p>로봇에게 매장 위치를 물어보세요!</p>
+          <a class="hoverable">TAP</a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    function goToLotte1() {
+        document.body.classList.add('slide-out-right');
+        setTimeout(function () {
+        window.location.href = "/lotte1"; 
+        }, 1000);
+    }
+
+    function goToLotte2() {
+        document.body.classList.add('slide-out-left');
+        setTimeout(function () {
+        window.location.href = "/lotte2";
+        }, 1000);
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    var doc = document.documentElement;
+    var FullPage = document.getElementById("logo-image");
+
+    // 전체화면 설정
+    function openFullScreenMode() {
+        if (doc.requestFullscreen)
+            doc.requestFullscreen();
+        else if (doc.webkitRequestFullscreen)
+            doc.webkitRequestFullscreen();
+        else if (doc.mozRequestFullScreen) 
+            doc.mozRequestFullScreen();
+        else if (doc.msRequestFullscreen) 
+            doc.msRequestFullscreen();
+        $('.fullscreen').hide();
+        $('.close-fullscreen').show();
+    }
+
+    function closeFullScreenMode() {
+        if (document.exitFullscreen)
+            document.exitFullscreen();
+        else if (document.webkitExitFullscreen)
+            document.webkitExitFullscreen();
+        else if (document.mozCancelFullScreen) 
+            document.mozCancelFullScreen();
+        else if (document.msExitFullscreen) 
+            document.msExitFullscreen();
+        $('.fullscreen').show();
+        $('.close-fullscreen').hide();
+    }
+
+    FullPage.addEventListener("click", function () {
+        if (!document.fullscreenElement && 
+            !document.webkitFullscreenElement && 
+            !document.mozFullScreenElement && 
+            !document.msFullscreenElement) { 
+            openFullScreenMode();
+        } else {
+            closeFullScreenMode();
+        }
+    });
+});
+
+  </script>
+</html>
